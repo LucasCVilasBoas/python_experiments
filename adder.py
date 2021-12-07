@@ -15,5 +15,3 @@ def divide_two_numbers(a, b) -> int:
 
     except ZeroDivisionError:
         print('You cannot divide a number by zero')
-
-print(add_two_numbers(1, 2))
