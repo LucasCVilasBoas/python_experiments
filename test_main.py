@@ -52,7 +52,7 @@ def test_multiply_two_numbers_negative_and_zero():
     assert adder.multiply_two_numbers(-1, 0) == 0
 
 
-# Testing multiplication function
+# Testing division function
 def test_divide_two_positive_numbers():
     assert adder.divide_two_numbers(2, 2) == 1
 
@@ -66,9 +66,7 @@ def test_divide_two_numbers_negative_and_positive():
     assert adder.divide_two_numbers(2, -2) == -1
 
 def test_divide_two_numbers_positive_and_zero():
-    with pytest.raises(Exception):
-        assert adder.divide_two_numbers(2, 0)
+    assert adder.divide_two_numbers(2, 0) == 'You cannot divide a number by zero'
 
 def test_divide_two_numbers_negative_and_zero():
-    with pytest.raises(Exception):
-        assert adder.divide_two_numbers(-2, 0)
+    assert adder.divide_two_numbers(-2, 0) == 'You cannot divide a number by zero'

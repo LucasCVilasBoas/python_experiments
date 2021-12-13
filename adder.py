@@ -1,5 +1,3 @@
-import math
-
 def add_two_numbers(a, b) -> int:
     return a + b
 
@@ -14,4 +12,4 @@ def divide_two_numbers(a, b) -> int:
         return a/b
 
     except ZeroDivisionError:
-        print('You cannot divide a number by zero')
+        return 'You cannot divide a number by zero'
